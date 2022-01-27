@@ -1,98 +1,91 @@
-<!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #f1f1f1;}
+    <title>
+        login form
+    </title>
+    <style>
+        #name {
+            width: 200px;
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid white;
+            padding: 6px;
+            margin-bottom: 15px;
+            margin-bottom: 20px;
+            color: white;
+        }
 
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
+        #button {
+            border-radius: 10px;
+            padding: 10px 20px;
+            background: salmon;
+            color: white;
+            margin-top: 10px;
+            border: none;
+            outline:none;
+            margin-left: 50px;
 
-button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
 
-button:hover {
-  opacity: 0.8;
-}
 
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
+        }
 
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-}
+        #button:hover {
+            background-color: blue;
+            color: black;
+            cursor: pointer;
 
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
+        }
 
-.container {
-  padding: 16px;
-}
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(./zac-durant-BBkftRWOPTA-unsplash.jpg);
+            background-size: cover;
 
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
+        }
 
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-}
-</style>
+        .container {
+
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            background-image: url(./pink-oil-painted-canvas-background_53876-93727.jpg);
+            enable-background: accumulate;
+
+        }
+
+        .card {
+            padding: 60px 40px 50px 40px;
+            background: rgb(50, 50, 50);
+            border-radius: 10px;
+        }
+
+        a {
+            font-size: 13px;
+        }
+
+        img {
+            border-radius: 50%;
+            position: absolute;
+            margin-left: 100px;
+            margin-top: -35px;
+        }
+    </style>
 </head>
+
 <body>
+    <div class="container">
+        <img src="./33-338711_circle-user-icon-blue-hd-png-download.png" height="50" width="50">
 
-<h2>Login Form</h2>
-
-<form action="/action_page.php" method="post">
-  <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
-
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-        
-    <button type="submit">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-</form>
-
+        <div class="card">
+            <input type="text" placeholder="usename" id="name"><br>
+            <input type="password" placeholder="password" id="name"><br>
+            <a href="#">forget password?</a><br>
+            <input type="submit" value="submit" id="button">
+        </div>
+    </div>
 </body>
+
 </html>
